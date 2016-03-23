@@ -1,0 +1,7 @@
+<Alloy>
+  <TableViewRow id="row">
+    <ImageView id="check" onClick="toggleStatus"/>
+    <Label id="task" text="{item}"/> 	<!-- Backbone.js uses { }'s syntax -->
+    <ImageView id="remove" onClick="deleteTask"/>
+  </TableViewRow>
+</Alloy>
