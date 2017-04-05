@@ -1,7 +1,7 @@
 // Arguments passed into this controller can be accessed off of the `$.args` object directly or:
 var args = $.args;
 
-var moment = require('alloy/moment');
+var moment = require('alloy/moment');	// imports the moment library
 var todos = Alloy.Collections.todo;
 var id;
 
@@ -25,11 +25,11 @@ if ($model) {	// $model != null && $model != 'undefined'
 
 // toggle the "done" status of the IDed todo
 function toggleStatus(e) {
-	// find the todo task by id
+	// find the todo task by id (see top of this file)
 	var todo = todos.get(id);	// local todo != global todo
 
 	// set the current "done" and "date_completed" fields for the model,
-	// then save to the presistence layer, and model-view binding will
+	// then save to the persistence layer, and model-view binding will
 	// automatically reflect this in the tableview
 	todo.set({
 		"done": todo.get('done') ? 0 : 1,	// invert done's value

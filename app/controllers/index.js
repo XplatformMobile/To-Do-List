@@ -13,7 +13,8 @@ $.todoWin.open();
 todos && todos.fetch();
 
 // Filter the fetched collection before rendering. Don't return the
-// collection itself, but instead return an array of models
+// collection itself, but instead return an array of models from either
+// the "All", "Active" or "Done" todos, depending on which is selected,
 // that you would like to render. This function works in concert with
 // the function showTasks(e) at the end of this file, which is called
 // every time the All, Active or Done buttons are clicked.

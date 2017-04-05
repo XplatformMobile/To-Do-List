@@ -88,7 +88,7 @@
 }
 
 "#tabbedbar": { // only used for iOS
-	style: Titanium.UI.iPhone.SystemButtonStyle.BAR,
+//	style: Titanium.UI.iPhone.SystemButtonStyle.BAR,
 	backgroundColor: '#fff',
 	index: 0,
 	height: 40,
